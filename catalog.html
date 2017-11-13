@@ -56,11 +56,65 @@
             </ul>         
             <h1 class="page-title">Перфораторы</h1>
             <section class="filter">
-                <!-- здесь будет фильтр -->
+                <form class="filter-options" action="" method="get">
+                    <h2>Фильтр:</h2>
+                    <fieldset class="filter-item">
+                        <legend>Цена:</legend>
+                        <input type="range" id="cost" min="0" max="30000" step="100">
+                        <span class="filter-min-value">0</span>
+                        <span class="filter-max-value">30000</span>
+                    </fieldset>
+                    <fieldset class="filter-item">
+                        <legend>Производители:</legend>
+                        <ul class="producer-list">
+                            <li class="producer-item">    
+                                <input type="checkbox" name="bosch" id="producer-bosch" checked>
+                                <label for="producer-bosch">Bosch</label>
+                            </li>
+                            <li class="producer-item">
+                                <input type="checkbox" name="interscol" id="producer-interscol">
+                                <label for="producer-interscol">Интерскол</label>
+                            </li>
+                            <li class="producer-item">
+                                <input type="checkbox" name="makita" id="producer-makita" checked>
+                                <label for="producer-makita">Makita</label>
+                            </li>
+                            <li class="producer-item">
+                                <input type="checkbox" name="dewalt" id="producer-dewalt">
+                                <label for="producer-dewalt">DeWalt</label>
+                            </li>
+                            <li class="producer-item">
+                                <input type="checkbox" name="hitachi" id="producer-hitachi">
+                                <label for="producer-hitachi">Hitachi</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="filter-item">
+                        <legend>Питание:</legend>
+                        <ul class="power-supply-list">
+                            <li class="power-supply-item">
+                                <input type="radio" name="power-group" id="power-battery" checked>
+                                <label for="power-battery">Аккумуляторные</label>
+                            </li>
+                            <li class="power-supply-item">
+                                <input type="radio" name="power-group" id="power-network">
+                                <label for="power-network">Сетевые</label>
+                            </li>
+                        </ul>
+                    </fieldset> 
+                    <button class="button button-show" type="submit">Показать</button>
+                </form>
             </section>         
             <section class="catalog">
                 <section class="sorting">
-                    <!-- здесь будет сортировка -->
+                    <h2>Сортировка:</h2>
+                    <ul class="sorting-buttons-list">
+                        <li><button class="sorting-button" type="button">По цене</button></li>
+                        <li><button class="sorting-button" type="button">По типу</button></li>
+                        <li><button class="sorting-button" type="button">По функционалу</button></li>
+                        <li><button class="sorting-button btn-arrow" type="button"><span class="visually-hidden">Сверху-вниз</span></button></li>
+                        <li><button class="sorting-button btn-arrow" type="button"><span class="visually-hidden">Снизу-вверх</span></button></li>
+                    </ul>
                 </section>           
                 <section class="products">
                     <ul class="product-list">
@@ -119,8 +173,8 @@
                 </section>
                 <section class="page-navigation">
                     <ul class="pagination-list">
-                        <li class="pagination-item"><a href="#">1</a></li>
-                        <li class="pagination-item pagination-item-current"><a>2</a></li>
+                        <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                        <li class="pagination-item"><a href="#">2</a></li>
                         <li class="pagination-item"><a href="#">3</a></li>
                         <li class="pagination-item next-button"><a href="#">Следующая</a></li>
                     </ul>
@@ -187,9 +241,12 @@
         </footer>
         
         <section class="modal modal-bookmark-added">
-            
-            <!-- модальное окно -->
-            
+            <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+            <span class="product-added">Товар добавлен в корзину!</span>
+            <div class="modal-bookmark-buttons">
+                <a class="checkout" href="#">Оформить заказ</a>
+                <button class="shop-continue" type="button">Продолжить покупки</button>
+            </div>
         </section>
     </body>    
 </html>

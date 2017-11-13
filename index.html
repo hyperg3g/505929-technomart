@@ -61,7 +61,10 @@
                     </li>
                     <li class="promo-slider"> <!-- слайдер -->
                         <h2 class="visually-hidden">Промо слайдер</h2> <!-- будет спрятан -->
-                        <a href="catalog.html">Открыть каталог</a>
+                        <div class="promo-slider-block">
+                            <img src="img/promo-slider-1.jpg" width="620" height="266" alt="Промо">
+                            <a href="catalog.html">Открыть каталог</a>
+                        </div>
                     </li>
                     <li class="promo-item discount">
                         <h2>Скидки 50%</h2>
@@ -148,7 +151,9 @@
                 <h2>Сервисы</h2>
                 <p>Хороший интерне-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки прятными.</p>
                 
-                <!-- слайдер -->
+                <div class="service-slider-block">
+                    <img src="img/service-slider-delivery.png" width="468" height="261" alt="Доставка">
+                </div>
                 
             </section>         
             <section class="about-block">
@@ -226,9 +231,22 @@
         </footer>
         
         <section class="modal modal-write-us">
-            
-            <!-- форма обратной связи -->
-            
+            <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+            <form class="feedback" action="" method="post">
+                <p class="name-field">
+                    <label for="user-name">Ваше имя:</label>
+                    <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
+                </p>
+                <p class="email-field">
+                    <label for="user-email">Ващ e-mail:</label>
+                    <input type="text" name="email" id="user-email" placeholder="Для отправки ответа">
+                </p>
+                <p class="message-field">
+                    <label for="user-message">Текст письма:</label>
+                    <textarea name="message" id="user-message">В свободной форме</textarea>
+                </p>
+                <button class="button button-submit" type="submit">Отправить</button>
+            </form>      
         </section>
     </body>
 </html>
