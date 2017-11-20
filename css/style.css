@@ -1,0 +1,442 @@
+body { /* потом указать цвет текста и фона у body */
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #f1f5f7;
+}
+
+.main-header .main-navigation {
+    color: #ffffff;
+    background-color: #32425c;
+}
+
+.site-navigation,
+.user-navigation,
+.product-list,
+.menu-info-block .header-contacts,
+.container .breadcrumbs,
+.promo-blocks .promo-list,
+.producer-list,
+.footer-social ul,
+.filter ul,
+.sorting ul,
+.pagination-list {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #ffffff;
+}
+
+.main-header .site-navigation a:hover {
+    background-color: #293449;
+}
+
+.main-header .site-navigation a:focus {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #1d2739;
+}
+
+.main-user-navigation {
+    color: #ffffff;
+    background-color: #293449;
+}
+
+.main-user-navigation a:hover {
+    background-color: #212a3a;
+}
+
+.main-user-navigation a:focus {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #161d29;
+}
+
+.main-user-navigation .checkout {
+    background-color: #63a63e;
+}
+
+.main-user-navigation .checkout:hover {
+    background-color: #5fbb2d;
+}
+
+.main-user-navigation .checkout:focus {
+    color: rgba(255, 255, 255, 0.51);
+    background-color: #518534;
+}
+
+.menu-info-block .header-site-description {
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: #ee3643;
+}
+
+.header-contacts .phone {
+    font-size: 21px;
+    color: #e9292a;
+}
+
+.header-contacts .location {
+    font-size: 14px;
+    color: #32425c;
+}
+
+.menu-info-block .user-login,
+.menu-info-block .user-registration,
+.menu-info-block .user-logout {
+    font-size: 21px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.user-account-control .user-login:hover,
+.user-account-control .user-registration:hover {
+    color: #ee3643;
+}
+
+.user-account-control .user-login:focus,
+.user-account-control .user-registration:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user-account-control .user-logout:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user-account-control .user-account-btn {
+    color: #32425c;
+    text-decoration: underline;
+}
+
+.user-account-control .user-account-btn:hover {
+    color: #ee3643;
+}
+
+.user-account-control .user-account-btn:focus {
+    color: rgba(50, 66, 92, 0.3);
+}
+
+.breadcrumbs a,
+.breadcrumbs .breadcrumbs-current {
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.content .promo-blocks {
+    background-color: #ffffff;
+}
+
+.container .page-title {
+    background-color: #f2f6f8;
+    text-transform: uppercase;
+}
+
+.filter,
+.page-navigation {
+    font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.filter h2,
+.sorting h2 {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.filter-options legend {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.producer-item label,
+.power-supply-item label,
+.filter .button-show {
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.sorting {
+    background-color: #f7f3ec;
+}
+
+.promo-item h2 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.promo-item a,
+.promo-slider-block a,
+.popular-products a,
+.popular-producers a,
+.about-us a,
+.contacts button,
+.feedback button,
+.modal .checkout {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.promo-slider-block a,
+.popular-products a,
+.popular-producers a,
+.about-us a,
+.contacts button,
+.feedback button,
+.modal .checkout {
+    background-color: #ee3643;
+}
+
+.promo-slider-block a:hover,
+.popular-products a:hover,
+.popular-producers a:hover,
+.about-us a:hover,
+.contacts button:hover,
+.feedback button:hover,
+.modal .checkout:hover {
+    background-color: #ca2c37;
+}
+
+.promo-slider-block a:focus,
+.popular-products a:focus,
+.popular-producers a:focus,
+.about-us a:focus,
+.contacts button:focus,
+.feedback button:focus,
+.modal .checkout:focus {
+    background-color: #ba2732;
+}
+
+.promo-item a {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.promo-item a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-item a:focus {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo-blocks .materials {
+    background-color: #ffbf47;
+}
+
+.promo-blocks .instruments {
+    background-color: #3bbce3;
+}
+
+.promo-blocks .vehicle {
+    background-color: #dc91d8;
+}
+
+.promo-blocks .discount {
+    background-color: #8ed78f;
+}
+
+.promo-blocks .delivery {
+    background-color: #ffc047;
+}
+
+.popular-products,
+.popular-producers {
+    background-color: #f9f5f0;
+}
+
+.popular-products h2,
+.popular-producers h2,
+.container .page-title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #32425c;
+}
+
+.product-item {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.product-item s,
+.product-item b {
+    font-size: 17px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+
+.product-item b {
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.service-block {
+    background-color: #f4f7f9;
+}
+
+.service-block h2,
+.about-us h2,
+.contacts h2,
+.about h2 {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.service-block p,
+.about-us p,
+.contacts p,
+.about p{
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.about {
+    background-color: #f2f6f8;
+}
+
+.about-us li {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.pagination-item a {
+    font-size: 13px;
+    color: #000000;
+}
+
+.pagination-item-current {
+    background-color: #ee3643;
+}
+
+.footer-navigation-block {
+    background-color: #32425c;
+}
+
+.footer-info-block {
+    background-color: #293449;
+}
+
+.footer-navigation-row1 a {
+    font-size: 18px;
+    color: #f1f5f7;
+}
+
+.footer-navigation-row2 a {
+    font-size: 18px;
+    color: #ffd180;
+}
+
+.footer-navigation-row1 a:hover,
+.footer-navigation-row2 a:hover,
+.footer-copyright a:hover {
+    text-decoration: underline;
+}
+
+.footer-navigation-row1 a:focus,
+.footer-navigation-row2 a:focus {
+    opacity: 0.5;
+}
+
+.footer-contacts {
+    font-size: 18px;
+    line-height: 24px;
+    color: #f1f5f7;
+}
+
+.footer-copyright {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-copyright a {
+    color: #ffd180;
+}
+
+.footer-copyright a:focus {
+    color: #ee3643;
+}
+
+.product-hover-buttons a {
+    font-size: 14px;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: #63a63e;
+    text-transform: uppercase;
+}
+
+.product-hover-buttons a:hover {
+    background-color: #5fbb2d;
+}
+
+.product-hover-buttons a:focus {
+    background-color: #518534;
+}
+
+.product-hover-buttons button {
+    font-size: 14px;
+    color: #32425c;
+    background-color: #ffffff;
+    text-transform: uppercase;
+}
+
+.feedback label {
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.feedback .button-wrap,
+.modal-bookmark-buttons {
+    background-color: #f1f1f1;
+}
+
+.product-added {
+    font-size: 30px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.modal .shop-continue {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}

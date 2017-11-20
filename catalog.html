@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>Каталог</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">         
@@ -24,12 +28,9 @@
                         <li class="phone">+7 (812) 555-05-55</li>
                         <li class="location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
                     </ul>           
-                    <nav class="main-user-navigation">
+                    <nav class="user-account-control">
                         <ul class="user-navigation">
-                            <li class="user-logout">
-                                <p class="user-name">Равшан Джамшутович</p>
-                                <a class="logout-button" href="#">Выйти</a>
-                            </li>
+                            <li><a class="user-logout" href="#">Равшан Джамшутович</a></li>
                             <li><a class="user-account-btn" href="#">Мои заказы</a></li>
                             <li><a class="user-account-btn" href="#">Личный кабинет</a></li>
                         </ul>
@@ -51,7 +52,7 @@
         
         <main class="container">           
             <ul class="breadcrumbs">
-                <li><a class="breadcrumbs-item home-icon" href="#">Домой</a></li>
+                <li><a class="breadcrumbs-item home-icon" href="#"><span class="visually-hidden">Домой</span></a></li>
                 <li><a class="breadcrumbs-item" href="#">Каталог</a></li>
                 <li><a class="breadcrumbs-item" href="#">Инструмент</a></li>
                 <li class="breadcrumbs-current">Перфораторы</li>
@@ -214,7 +215,7 @@
                         <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
                         <li class="pagination-item"><a href="#">2</a></li>
                         <li class="pagination-item"><a href="#">3</a></li>
-                        <li class="pagination-item next-button"><a href="#">Следующая</a></li>
+                        <li class="pagination-item next-button"><a href="#">СЛЕДУЮЩАЯ</a></li>
                     </ul>
                 </section>
             </section>
@@ -269,7 +270,7 @@
                 </div>            
                 <p class="footer-copyright">
                     Обратная связь: 
-                    mail@htmlacademy.ru
+                    <a href="#">mail@htmlacademy.ru</a>
                 </p>
                 <p class="footer-copyright">
                     Разработано - 

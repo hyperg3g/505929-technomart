@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">           
@@ -24,7 +28,7 @@
                         <li class="phone">+7 (812) 555-05-55</li>
                         <li class="location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
                     </ul>        
-                    <nav class="main-user-navigation">
+                    <nav class="user-account-control">
                         <ul class="user-navigation">
                             <li><a class="user-login" href="login.html">Войти</a></li>
                             <li><a class="user-registration" href="registration.html">Регистрация</a></li>    
@@ -80,7 +84,7 @@
             </section>            
             <section class="product-blocks">
                 <div class="popular-products">
-                    <h2>Популярные товары</h2>
+                    <h2>Популярные товары:</h2>
                     <a href="#">Все популярные товары</a>
                 </div>
                 <ul class="product-list">
@@ -193,7 +197,7 @@
                     <h2>Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис:</p>
                     <a href="#"><img src="img/map.png" width="300" height="158"></a>
-                    <input type="button" name="write-us" id="write-button" value="Заблудились? Напишите нам!">
+                    <button type="button">Заблудились? Напишите нам!</button>
                 </section>
             </section>          
         </main>
@@ -239,7 +243,7 @@
                 </div>            
                 <p class="footer-copyright">
                     Обратная связь: 
-                    mail@htmlacademy.ru
+                    <a href="#">mail@htmlacademy.ru</a>
                 </p>
                 <p class="footer-copyright">
                     Разработано - 
@@ -263,7 +267,9 @@
                     <label for="user-message">Текст письма:</label>
                     <textarea name="message" id="user-message">В свободной форме</textarea>
                 </p>
-                <button class="button button-submit" type="submit">Отправить</button>
+                <div class="button-wrap">
+                    <button class="button button-submit" type="submit">Отправить</button>
+                </div>
             </form>      
         </section>
     </body>
