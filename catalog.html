@@ -12,38 +12,42 @@
 
 <body>
     <header class="main-header catalog-header">
-        <div class="main-user-navigation-wrap container">
+        <div class="main-user-navigation-wrap">
             <nav class="main-user-navigation container">
                 <ul class="user-navigation container">
                     <li>
-                        <div class="site-logo">
-                            <span class="logo-text"><a href="index.html">ТЕХНОМАРТ</a></span>
+                        <div class="site-logo-link">
+                            <span class="logo-text"><a class="logo-home" href="index.html">ТЕХНОМАРТ</a></span>
                         </div>
                     </li>
-                    <li><input class="search-item" type="search" name="site-search" id="search-field" value="Поиск"></li>
-                    <li><a class="bookmarks" href="#">Закладки</a></li>
-                    <li><a class="cart" href="#">Корзина</a></li>
+                    <li>
+                        <label for="search-field">
+                            <input class="search-item" type="search" name="site-search" id="search-field" placeholder="Поиск:">
+                        </label>
+                    </li>
+                    <li><a class="bookmarks" href="#">Закладки: 0</a></li>
+                    <li><a class="cart" href="#">Корзина: 0</a></li>
                     <li><a class="checkout" href="#">Оформить заказ</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="menu-info-block container">
-            <div class="menu-info-subblock">
+        <div class="menu-info-block">
+            <div class="menu-info-subblock container">
                 <p class="header-site-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
                 <ul class="header-contacts">
                     <li class="phone">+7 (812) 555-05-55</li>
                     <li class="location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
                 </ul>
-                <nav class="user-account-control">
-                    <ul class="user-navigation logged-user-control">
+                <nav class="user-account-control container">
+                    <ul class="logged-user-control container">
                         <li><a class="user-logout" href="#">Равшан Джамшутович</a></li>
                         <li><a class="user-account-btn" href="#">Мои заказы</a></li>
-                        <li><a class="user-account-btn" href="#">Личный кабинет</a></li>
+                        <li><a class="user-account-btn list-style-dot" href="#">Личный кабинет</a></li>
                     </ul>
                 </nav>
             </div>
-            <nav class="main-navigation">
-                <ul class="site-navigation">
+            <nav class="main-navigation container">
+                <ul class="site-navigation container">
                     <li><a class="main-menu-item index">Главная</a></li>
                     <li><a class="main-menu-item company" href="company.html">Компания</a></li>
                     <li><a class="main-menu-item catalog-link" href="catalog.html">Каталог</a></li>
@@ -65,52 +69,79 @@
                 <li class="breadcrumbs-current">Перфораторы</li>
             </ul>
         </div>
-        <h1 class="page-title container">Перфораторы</h1>
+        <div class="page-title-wrap container">
+            <h1>Перфораторы</h1>
+        </div>
         <div class="catalog-wrap container">
             <section class="filter">
                 <form class="filter-options" action="" method="get">
                     <h2>Фильтр:</h2>
-                    <fieldset class="filter-item">
+                    <fieldset class="filter-item price-option">
                         <legend>Цена:</legend>
-                        <input type="range" id="cost" min="0" max="30000" step="100">
-                        <span class="filter-min-value">0</span>
-                        <span class="filter-max-value">30000</span>
+                        <div class="range-wrap">
+                            <input type="range" id="cost" min="0" max="30000" step="100">
+                        </div>
+                        <div class="range-value-wrap">
+                            <span class="filter-min-value">0</span>
+                            <span class="filter-max-value">30000</span>
+                        </div>
                     </fieldset>
-                    <fieldset class="filter-item">
+                    <fieldset class="filter-item producer-option">
                         <legend>Производители:</legend>
                         <ul class="producer-list">
                             <li class="producer-item">
-                                <input type="checkbox" name="bosch" id="producer-bosch" checked>
-                                <label for="producer-bosch">Bosch</label>
+                                <label for="producer-bosch">
+                                    <input type="checkbox" name="bosch" id="producer-bosch" checked>
+                                    <span class="checkbox-indicator"></span>
+                                    Bosch
+                                </label>
                             </li>
                             <li class="producer-item">
-                                <input type="checkbox" name="interscol" id="producer-interscol">
-                                <label for="producer-interscol">Интерскол</label>
+                                <label for="producer-interscol">
+                                    <input type="checkbox" name="interscol" id="producer-interscol">
+                                    <span class="checkbox-indicator"></span>
+                                    Интерскол
+                                </label>
                             </li>
                             <li class="producer-item">
-                                <input type="checkbox" name="makita" id="producer-makita" checked>
-                                <label for="producer-makita">Makita</label>
+                                <label for="producer-makita">
+                                    <input type="checkbox" name="makita" id="producer-makita" checked>
+                                    <span class="checkbox-indicator"></span>
+                                    Makita
+                                </label>
                             </li>
                             <li class="producer-item">
-                                <input type="checkbox" name="dewalt" id="producer-dewalt">
-                                <label for="producer-dewalt">DeWalt</label>
+                                <label for="producer-dewalt">
+                                    <input type="checkbox" name="dewalt" id="producer-dewalt">
+                                    <span class="checkbox-indicator"></span>
+                                    DeWalt
+                                </label>
                             </li>
                             <li class="producer-item">
-                                <input type="checkbox" name="hitachi" id="producer-hitachi">
-                                <label for="producer-hitachi">Hitachi</label>
+                                <label for="producer-hitachi">
+                                    <input type="checkbox" name="hitachi" id="producer-hitachi">
+                                    <span class="checkbox-indicator"></span>
+                                    Hitachi
+                                </label>
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="filter-item">
+                    <fieldset class="filter-item power-option">
                         <legend>Питание:</legend>
                         <ul class="power-supply-list">
                             <li class="power-supply-item">
-                                <input type="radio" name="power-group" id="power-battery" checked>
-                                <label for="power-battery">Аккумуляторные</label>
+                                <label for="power-battery">
+                                    <input type="radio" name="power-group" id="power-battery" checked>
+                                    <span class="radio-indicator"></span>
+                                    Аккумуляторные
+                                </label>
                             </li>
                             <li class="power-supply-item">
-                                <input type="radio" name="power-group" id="power-network">
-                                <label for="power-network">Сетевые</label>
+                                <label for="power-network">
+                                    <input type="radio" name="power-group" id="power-network">
+                                    <span class="radio-indicator"></span>
+                                    Сетевые
+                                </label>
                             </li>
                         </ul>
                     </fieldset>
@@ -124,8 +155,8 @@
                         <li><a class="sorting-button" href="#">По цене</a></li>
                         <li><a class="sorting-button" href="#">По типу</a></li>
                         <li><a class="sorting-button" href="#">По функционалу</a></li>
-                        <li><a class="sorting-button btn-arrow" href="#"><span class="visually-hidden">Сверху-вниз</span></a></li>
-                        <li><a class="sorting-button btn-arrow" href="#"><span class="visually-hidden">Снизу-вверх</span></a></li>
+                        <li><a class="sorting-button btn-arrow-up" href="#"><span class="visually-hidden">Сверху-вниз</span></a></li>
+                        <li><a class="sorting-button btn-arrow-down" href="#"><span class="visually-hidden">Снизу-вверх</span></a></li>
                     </ul>
                 </section>
                 <section class="products">
@@ -242,10 +273,10 @@
                 </section>
                 <section class="page-navigation">
                     <ul class="pagination-list">
-                        <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-                        <li class="pagination-item"><a href="#">2</a></li>
-                        <li class="pagination-item"><a href="#">3</a></li>
-                        <li class="pagination-item next-button"><a href="#">СЛЕДУЮЩАЯ</a></li>
+                        <li class="pagination-item-current">1</li>
+                        <li><a class="pagination-item" href="#">2</a></li>
+                        <li><a class="pagination-item" href="#">3</a></li>
+                        <li><a class="page-next" href="#">СЛЕДУЮЩАЯ</a></li>
                     </ul>
                 </section>
             </section>
@@ -264,7 +295,7 @@
         <div class="footer-navigation-wrap">
             <div class="footer-navigation-block container">
                 <nav class="footer-navigation-row1">
-                    <div class="site-logo">
+                    <div class="site-logo footer-site-logo">
                         <span class="logo-text">ТЕХНОМАРТ</span>
                     </div>
                     <ul class="site-navigation">
@@ -295,9 +326,9 @@
                 </p>
                 <div class="footer-social">
                     <ul>
-                        <li><a class="social-button vk-button" href="#">Вконтакте</a></li>
-                        <li><a class="social-button facebook-button" href="#">Фейсбук</a></li>
-                        <li><a class="social-button instagram-button" href="#">Инстаграм</a></li>
+                        <li><a class="social-button vk-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+                        <li><a class="social-button facebook-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+                        <li><a class="social-button instagram-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -315,14 +346,16 @@
     </footer>
 
     <section class="modal modal-bookmark-added">
-        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-        <div class="modal-text-wrap container">
-            <span class="product-added">Товар добавлен в корзину!</span>
-        </div>
-        <div class="bookmark-buttons-wrap">
-            <div class="modal-bookmark-buttons container">
-                <a class="checkout" href="#">Оформить заказ</a>
-                <button class="shop-continue" type="button">Продолжить покупки</button>
+        <div class="modal-bookmark-added-wrap">
+            <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+            <div class="modal-text-wrap container">
+                <span class="product-added">Товар добавлен в корзину!</span>
+            </div>
+            <div class="bookmark-buttons-wrap">
+                <div class="modal-bookmark-buttons container">
+                    <a class="checkout" href="#">Оформить заказ</a>
+                    <button class="shop-continue" type="button">Продолжить покупки</button>
+                </div>
             </div>
         </div>
     </section>
