@@ -78,11 +78,16 @@
                     <h2>Фильтр:</h2>
                     <fieldset class="filter-item price-option">
                         <legend>Цена:</legend>
-                        <div class="range-wrap">
-                            <input type="range" id="cost" min="0" max="30000" step="100">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="range-toggle range-toggle-min"></div>
+                            <div class="range-toggle range-toggle-max"></div>
                         </div>
                         <div class="range-value-wrap">
                             <span class="filter-min-value">0</span>
+                            _
                             <span class="filter-max-value">30000</span>
                         </div>
                     </fieldset>
@@ -155,8 +160,8 @@
                         <li><a class="sorting-button" href="#">По цене</a></li>
                         <li><a class="sorting-button" href="#">По типу</a></li>
                         <li><a class="sorting-button" href="#">По функционалу</a></li>
-                        <li><a class="sorting-button btn-arrow-up" href="#"><span class="visually-hidden">Сверху-вниз</span></a></li>
-                        <li><a class="sorting-button btn-arrow-down" href="#"><span class="visually-hidden">Снизу-вверх</span></a></li>
+                        <li><a class="btn-arrow-up" href="#"><span class="visually-hidden">Сверху-вниз</span></a></li>
+                        <li><a class="btn-arrow-down" href="#"><span class="visually-hidden">Снизу-вверх</span></a></li>
                     </ul>
                 </section>
                 <section class="products">
