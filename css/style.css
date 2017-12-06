@@ -1057,25 +1057,29 @@ li:nth-child(2) .account-btn-wrap::before {
 .product-item .img-wrap {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 170px;
+}
+
+.catalog .img-wrap {
+    margin-bottom: 20px;
 }
 
 .img-wrap img[src="img/bfg-9000.png"] {
-    padding-top: 5px;
+    padding-top: 6px;
     padding-right: 1px;
 }
 
 .img-wrap img[src="img/bfg-3000.png"] {
+    padding-top: 29px;
     padding-right: 12px;
 }
 
 .img-wrap img[src="img/bfg-6000.png"] {
-    padding-top: 2px;
+    padding-top: 22px;
     padding-right: 22px;
 }
 
 .img-wrap img[src="img/bfg-2000.png"] {
+    padding-top: 29px;
     padding-right: 28px;
 }
 
