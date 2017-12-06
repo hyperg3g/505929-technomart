@@ -26,7 +26,7 @@
                         </label>
                     </li>
                     <li><a class="bookmarks" href="#">Закладки: 0</a></li>
-                    <li><a class="cart" href="#">Корзина: 0</a></li>
+                    <li><a class="cart cart-active" href="#">Корзина: 10</a></li>
                     <li><a class="checkout" href="#">Оформить заказ</a></li>
                 </ul>
             </nav>
@@ -80,7 +80,7 @@
         </div>
         <div class="catalog-wrap container">
             <section class="filter">
-                <form class="filter-options" action="" method="get">
+                <form class="filter-options" action="#" method="get">
                     <div class="title-wrap">
                         <h2>Фильтр:</h2>
                     </div>
@@ -161,6 +161,7 @@
                 </form>
             </section>
             <section class="catalog">
+                <h2 class="visually-hidden">Каталог</h2>
                 <section class="sorting">
                     <h2>Сортировка:</h2>
                     <ul class="sorting-buttons-list">
@@ -301,14 +302,14 @@
                         </li>
                     </ul>
                 </section>
-                <section class="page-navigation">
+                <div class="page-navigation">
                     <ul class="pagination-list">
                         <li class="pagination-item-current">1</li>
                         <li><a class="pagination-item" href="#">2</a></li>
                         <li><a class="pagination-item" href="#">3</a></li>
                         <li><a class="page-next" href="#">СЛЕДУЮЩАЯ</a></li>
                     </ul>
-                </section>
+                </div>
             </section>
         </div>
         <section class="about">
@@ -326,8 +327,8 @@
         <div class="footer-navigation-wrap">
             <div class="footer-navigation-block container">
                 <nav class="footer-navigation-row1">
-                    <div class="site-logo footer-site-logo">
-                        <span class="logo-text">ТЕХНОМАРТ</span>
+                    <div class="footer-site-logo-link">
+                        <span class="logo-text"><a class="logo-home" href="index.html">ТЕХНОМАРТ</a></span>
                     </div>
                     <ul class="site-navigation">
                         <li><a class="footer-menu-item" href="company.html">Компания</a></li>
@@ -377,6 +378,7 @@
     </footer>
 
     <section class="modal modal-bookmark-added">
+        <h3 class="visually-hidden">Товар добавлен в корзину!</h3>
         <div class="modal-bookmark-added-wrap">
             <button class="modal-close" onClick="closePopup()" type="button"><span class="visually-hidden">Закрыть</span></button>
             <div class="modal-text-wrap container">

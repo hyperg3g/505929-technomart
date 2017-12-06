@@ -96,8 +96,8 @@
                             <a class="button" href="catalog.html">Открыть каталог</a>
                         </li>
                     </ul>
-                    <label for="promo-slider-1"><div class="left-arrow"></div></label>
-                    <label for="promo-slider-2"><div class="right-arrow"></div></label>
+                    <label for="promo-slider-1"><span class="left-arrow"></span></label>
+                    <label for="promo-slider-2"><span class="right-arrow"></span></label>
                 </li>
                 <li class="promo-item promo-column">
                     <div class="discount">
@@ -227,19 +227,19 @@
                     <input class="visually-hidden" name="service-slider-group" id="credit" type="radio">
                     <div class="service-slider-control">
                         <label for="delivery">
-                            <div class="delivery-active slider-button-wrap">
+                            <span class="delivery-active slider-button-wrap">
                                 <span class="button-text">Доставка</span>
-                            </div>
+                            </span>
                         </label>
                         <label for="guarantee">
-                            <div class="guarantee-active slider-button-wrap">
+                            <span class="guarantee-active slider-button-wrap">
                                 <span class="button-text">Гарантия</span>
-                            </div>
+                            </span>
                         </label>
                         <label for="credit">
-                            <div class="credit-active slider-button-wrap">
+                            <span class="credit-active slider-button-wrap">
                                 <span class="button-text">Кредит</span>
-                            </div>
+                            </span>
                         </label>
                     </div>
                     <ul class="service-slider-list">
@@ -268,8 +268,9 @@
             </section>
         </div>
         <section class="about-block container">
+            <h2 class="visually-hidden">О компании</h2>
             <section class="about-us">
-                <h2>Компания «Техномарт»</h2>
+                <h3>Компания «Техномарт»</h3>
                 <div class="about-content-wrap">
                     <p>
                         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -286,12 +287,12 @@
                 <a class="button about-us-button" href="#">Подробнее о компании</a>
             </section>
             <section class="contacts">
-                <h2>Контакты</h2>
+                <h3>Контакты</h3>
                 <div class="contacts-content-wrap">
                     <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-                    <a href="#"><img src="img/map.png" width="300" height="158"></a>
+                    <a href="#"><img src="img/map.png" width="300" height="158" alt="Карта проезда"></a>
                 </div>
-                <button onClick="callPopup()" type="write-us-button button">Заблудились? Напишите нам!</button>
+                <button class="write-us-button" onClick="callPopup()" type="button">Заблудились? Напишите нам!</button>
             </section>
         </section>
     </main>
@@ -300,7 +301,7 @@
         <div class="footer-navigation-wrap">
             <div class="footer-navigation-block container">
                 <nav class="footer-navigation-row1">
-                    <div class="site-logo footer-site-logo">
+                    <div class="footer-site-logo">
                         <span class="logo-text">ТЕХНОМАРТ</span>
                     </div>
                     <ul class="site-navigation">
@@ -351,9 +352,10 @@
     </footer>
 
     <section class="modal modal-write-us">
+        <h3 class="visually-hidden">Напишите нам!</h3>
         <div class="modal-write-us-wrap">
             <button onClick="closePopup()" class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-            <form class="feedback" action="" method="post">
+            <form class="feedback" action="#" method="post">
                 <div class="form-fields-wrap container">
                     <div class="name-field">
                         <label for="user-name">Ваше имя:</label>
