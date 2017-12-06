@@ -294,7 +294,7 @@
                     <p>Вы можете забрать товар сами, заехав в наш офис:</p>
                     <a href="#"><img src="img/map.png" width="300" height="158" alt="Карта проезда"></a>
                 </div>
-                <button class="write-us-button" onClick="callPopup()" type="button">Заблудились? Напишите нам!</button>
+                <button class="write-us-button" type="button">Заблудились? Напишите нам!</button>
             </section>
         </section>
     </main>
@@ -356,7 +356,7 @@
     <section class="modal modal-write-us">
         <h3 class="visually-hidden">Напишите нам!</h3>
         <div class="modal-write-us-wrap">
-            <button onClick="closePopup()" class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+            <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
             <form class="feedback" action="#" method="post">
                 <div class="form-fields-wrap container">
                     <div class="name-field">
@@ -369,7 +369,7 @@
                     </div>
                     <div class="message-field">
                         <label for="user-message">Текст письма:</label>
-                        <textarea name="message" id="user-message">В свободной форме</textarea>
+                        <textarea name="message" id="user-message" placeholder="В свободной форме"></textarea>
                     </div>
                 </div>
                 <div class="button-wrap">
@@ -381,14 +381,27 @@
 
     <script>
         var popup = document.querySelector(".modal-write-us");
-        
-        function callPopup() {
+        var showPopup = document.querySelector(".write-us-button");
+        var closePopup = popup.querySelector(".modal-close");
+        var userName = popup.querySelector("[name=name]");
+
+        showPopup.addEventListener("click", function(evt) {
+            evt.preventDefault();
             popup.classList.add("modal-show");
-        }
-        
-        function closePopup() {
+            userName.focus();
+        });
+        closePopup.addEventListener("click", function(evt) {
+            evt.preventDefault();
             popup.classList.remove("modal-show");
-        }
+        });
+        window.addEventListener("keydown", function(evt) {
+            if (evt.keyCode === 27) {
+                if (popup.classList.contains("modal-show")) {
+                    popup.classList.remove("modal-show");
+                }
+            }
+        });
+
     </script>
-    
+
 </body>

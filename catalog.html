@@ -192,7 +192,7 @@
                             </div>
                             <div class="product-hover-buttons">
                                 <a class="button buy-button" href="#">Купить</a>
-                                <button class="button add-bookmark-button" onClick="callPopup()" type="button">В закладки</button>
+                                <button class="button add-bookmark-button" onclick="showPopup()" type="button">В закладки</button>
                             </div>
                         </li>
                         <li class="product-item">
@@ -206,7 +206,7 @@
                             </div>
                             <div class="product-hover-buttons">
                                 <a class="button buy-button" href="#">Купить</a>
-                                <button class="button add-bookmark-button" onClick="callPopup()" type="button">В закладки</button>
+                                <button class="button add-bookmark-button" onclick="showPopup()" type="button">В закладки</button>
                             </div>
                         </li>
                         <li class="product-item">
@@ -220,7 +220,7 @@
                             </div>
                             <div class="product-hover-buttons">
                                 <a class="button buy-button" href="#">Купить</a>
-                                <button class="button add-bookmark-button" onClick="callPopup()" type="button">В закладки</button>
+                                <button class="button add-bookmark-button" onclick="showPopup()" type="button">В закладки</button>
                             </div>
                         </li>
                         <li class="product-item">
@@ -234,7 +234,7 @@
                             </div>
                             <div class="product-hover-buttons">
                                 <a class="button buy-button" href="#">Купить</a>
-                                <button class="button add-bookmark-button" onClick="callPopup()" type="button">В закладки</button>
+                                <button class="button add-bookmark-button" onclick="showPopup()" type="button">В закладки</button>
                             </div>
                         </li>
                         <li class="product-item">
@@ -248,7 +248,7 @@
                             </div>
                             <div class="product-hover-buttons">
                                 <a class="button buy-button" href="#">Купить</a>
-                                <button class="button add-bookmark-button" onClick="callPopup()" type="button">В закладки</button>
+                                <button class="button add-bookmark-button" onclick="showPopup()" type="button">В закладки</button>
                             </div>
                         </li>
                         <li class="product-item">
@@ -262,7 +262,7 @@
                             </div>
                             <div class="product-hover-buttons">
                                 <a class="button buy-button" href="#">Купить</a>
-                                <button class="button add-bookmark-button" onClick="callPopup()" type="button">В закладки</button>
+                                <button class="button add-bookmark-button" onclick="showPopup()" type="button">В закладки</button>
                             </div>
                         </li>
                         <li class="product-item">
@@ -276,7 +276,7 @@
                             </div>
                             <div class="product-hover-buttons">
                                 <a class="button buy-button" href="#">Купить</a>
-                                <button class="button add-bookmark-button" onClick="callPopup()" type="button">В закладки</button>
+                                <button class="button add-bookmark-button" onclick="showPopup()" type="button">В закладки</button>
                             </div>
                         </li>
                         <li class="product-item">
@@ -290,7 +290,7 @@
                             </div>
                             <div class="product-hover-buttons">
                                 <a class="button buy-button" href="#">Купить</a>
-                                <button class="button add-bookmark-button" onClick="callPopup()" type="button">В закладки</button>
+                                <button class="button add-bookmark-button" onclick="showPopup()" type="button">В закладки</button>
                             </div>
                         </li>
                         <li class="product-item">
@@ -304,7 +304,7 @@
                             </div>
                             <div class="product-hover-buttons">
                                 <a class="button buy-button" href="#">Купить</a>
-                                <button class="button add-bookmark-button" onClick="callPopup()" type="button">В закладки</button>
+                                <button class="button add-bookmark-button" onclick="showPopup()" type="button">В закладки</button>
                             </div>
                         </li>
                     </ul>
@@ -389,14 +389,14 @@
     <section class="modal modal-bookmark-added">
         <h3 class="visually-hidden">Товар добавлен в корзину!</h3>
         <div class="modal-bookmark-added-wrap">
-            <button class="modal-close" onClick="closePopup()" type="button"><span class="visually-hidden">Закрыть</span></button>
+            <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
             <div class="modal-text-wrap container">
                 <span class="product-added">Товар добавлен в корзину!</span>
             </div>
             <div class="bookmark-buttons-wrap">
                 <div class="modal-bookmark-buttons container">
                     <a class="checkout" href="#">Оформить заказ</a>
-                    <button class="shop-continue" onClick="closePopup()" type="button">Продолжить покупки</button>
+                    <button class="shop-continue" type="button">Продолжить покупки</button>
                 </div>
             </div>
         </div>
@@ -404,14 +404,27 @@
 
     <script>
         var popup = document.querySelector(".modal-bookmark-added");
-
-        function callPopup() {
+        var closePopup = popup.querySelector(".modal-close");
+        var continueBtn = popup.querySelector(".shop-continue");
+        
+        function showPopup() {
             popup.classList.add("modal-show");
-        };
-
-        function closePopup() {
+        }; 
+        closePopup.addEventListener("click", function (evt) {
+            evt.preventDefault();
             popup.classList.remove("modal-show");
-        };
+        });
+        continueBtn.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+        });
+        window.addEventListener("keydown", function(evt) {
+            if (evt.keyCode === 27) {
+                if (popup.classList.contains("modal-show")) {
+                    popup.classList.remove("modal-show");
+                }
+            }
+        });
     </script>
 
 </body>
