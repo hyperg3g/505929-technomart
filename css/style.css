@@ -386,16 +386,45 @@ input[type="search"]::-moz-placeholder {
     list-style: none;
 }
 
-.logged-user-control .user-logout {
+.logged-user-control .user-profile {
     display: block;
     position: relative;
     
-    width: 254px;
+    width: 204px;
     padding-top: 14px;
     padding-bottom: 13px;
     padding-left: 47px;
     margin-top: 7px;
     margin-bottom: 8px;
+}
+
+.logged-user-control .user-logout {
+    position: relative;
+    width: 50px;
+    background-color: #ffffff;
+    margin-top: 7px;
+    margin-bottom: 8px;
+}
+
+.user-logout::before {
+    content: "";
+    
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    
+    width: 21px;
+    height: 17px;
+    
+    background-image: url("../img/svg-img/icon-logout.svg");
+}
+
+.user-logout:hover::before {
+    background-image: url("../img/svg-img/icon-logout-hover.svg");
+}
+
+.user-logout:focus::before {
+    background-image: url("../img/svg-img/icon-logout.svg");
 }
 
 .account-btn-wrap {
@@ -411,7 +440,7 @@ input[type="search"]::-moz-placeholder {
     text-decoration: underline;
 }
 
-.account-btn-wrap::before {
+li:nth-child(2) .account-btn-wrap::before {
     content: "";
     
     position: absolute;
@@ -440,7 +469,7 @@ input[type="search"]::-moz-placeholder {
     color: rgba(50, 66, 92, 0.3);
 }
 
-.user-logout::before {
+.user-profile::before {
     content: "";
 
     position: absolute;
@@ -453,25 +482,8 @@ input[type="search"]::-moz-placeholder {
     background-image: url("../img/svg-img/icon-user.svg");
 }
 
-.user-logout::after {
-    content: "";
-
-    position: absolute;
-    top: 14px;
-    left: 269px;
-
-    width: 21px;
-    height: 17px;
-
-    background-image: url("../img/svg-img/icon-logout.svg");
-}
-
-.user-logout:hover::before {
+.user-profile:hover::before {
     background-image: url("../img/svg-img/icon-user-hover.svg");
-}
-
-.user-logout:hover::after {
-    background-image: url("../img/svg-img/icon-logout-hover.svg");
 }
 
 .user-account-control .user-navigation {
@@ -530,7 +542,7 @@ input[type="search"]::-moz-placeholder {
 
 .menu-info-block .user-login,
 .menu-info-block .user-registration,
-.menu-info-block .user-logout {
+.menu-info-block .user-profile {
     font-size: 21px;
     color: #000000;
     background-color: #ffffff;
@@ -543,7 +555,7 @@ input[type="search"]::-moz-placeholder {
 
 .user-account-control .user-login:focus,
 .user-account-control .user-registration:focus,
-.user-account-control .user-logout:focus {
+.user-account-control .user-profile:focus {
     opacity: 0.3;
 }
 
@@ -764,6 +776,10 @@ input[type="search"]::-moz-placeholder {
 .about-wrap p {
     margin: 0;
     padding-top: 30px;
+}
+
+.about-wrap p:nth-of-type(2) {
+    padding: 0;
 }
 
 .content .promo-blocks {

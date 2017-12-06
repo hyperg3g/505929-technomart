@@ -34,7 +34,9 @@
         <div class="menu-info-block">
             <div class="menu-info-subblock container">
                 <div class="header-description-wrap">
-                    <p class="header-site-description">Интернет-магазин строительных материалов <br> и инструментов для ремонта</p>
+                    <p class="header-site-description">
+                        Интернет-магазин строительных материалов&nbsp;&nbsp;&nbsp;&nbsp; и инструментов для ремонта
+                    </p>
                 </div>
                 <ul class="header-contacts">
                     <li class="phone">+7 (812) 555-05-55</li>
@@ -42,7 +44,12 @@
                 </ul>
                 <nav class="user-account-control container">
                     <ul class="logged-user-control container">
-                        <li><a class="user-logout" href="#">Равшан Джамшутович</a></li>
+                        <li>
+                            <div class="account-btn-wrap">
+                                <a class="user-profile" href="#">Равшан Джамшутович</a>
+                                <a class="user-logout" href="#"><span class="visually-hidden">Выйти</span></a>
+                            </div>
+                        </li>
                         <li>
                             <div class="account-btn-wrap">
                                 <a class="user-account-btn" href="#">Мои заказы</a>
@@ -316,7 +323,9 @@
             <div class="about-wrap container">
                 <h2>Пара слов о перфораторах</h2>
                 <p>
-                    Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
+                    Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+                </p>
+                <p>
                     Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
                 </p>
             </div>
@@ -392,19 +401,19 @@
             </div>
         </div>
     </section>
-    
+
     <script>
         var popup = document.querySelector(".modal-bookmark-added");
-        
+
         function callPopup() {
             popup.classList.add("modal-show");
         };
-        
+
         function closePopup() {
             popup.classList.remove("modal-show");
         };
     </script>
-    
+
 </body>
 
 </html>
