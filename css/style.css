@@ -904,8 +904,8 @@ li:nth-child(2) .account-btn-wrap::before {
     background-color: white;
 }
 
-#promo-slider-1:checked ~ .promo-slider-control .promo--1::before,
-#promo-slider-2:checked ~ .promo-slider-control .promo--2::before {
+.toggle-promo-1:checked ~ .promo-slider-control .promo--1::before,
+.toggle-promo-2:checked ~ .promo-slider-control .promo--2::before {
     content: "";
 
     position: absolute;
@@ -957,11 +957,11 @@ li:nth-child(2) .account-btn-wrap::before {
     background-repeat: no-repeat;
 }
 
-#promo-slider-1:checked ~ .promo-slider-list .promo-slider-item:nth-child(1) {
+.toggle-promo-1:checked ~ .promo-slider-list .promo-slider-item:nth-child(1) {
     display: block;
 }
 
-#promo-slider-2:checked ~ .promo-slider-list .promo-slider-item:nth-child(2) {
+.toggle-promo-2:checked ~ .promo-slider-list .promo-slider-item:nth-child(2) {
     display: block;
 }
 
@@ -2092,22 +2092,22 @@ li:nth-child(2) .account-btn-wrap::before {
     display: none;
 }
 
-#delivery:checked ~ .service-slider-control .delivery-active,
-#guarantee:checked ~ .service-slider-control .guarantee-active,
-#credit:checked ~ .service-slider-control .credit-active {
+.toggle-service-1:checked ~ .service-slider-control .delivery-active,
+.toggle-service-2:checked ~ .service-slider-control .guarantee-active,
+.toggle-service-3:checked ~ .service-slider-control .credit-active {
     background-color: #ffffff;
     color: #32425c;
 }
 
-#delivery:checked ~ .service-slider-list .service-slider-item:nth-child(1) {
+.toggle-service-1:checked ~ .service-slider-list .service-slider-item:nth-child(1) {
     display: block;
 }
 
-#guarantee:checked ~ .service-slider-list .service-slider-item:nth-child(2) {
+.toggle-service-2:checked ~ .service-slider-list .service-slider-item:nth-child(2) {
     display: block;
 }
 
-#credit:checked ~ .service-slider-list .service-slider-item:nth-child(3) {
+.toggle-service-3:checked ~ .service-slider-list .service-slider-item:nth-child(3) {
     display: block;
 }
 
